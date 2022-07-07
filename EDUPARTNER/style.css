@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+body{
+    height: 100%;
+    background: #f9f9f9;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    max-width: 1260px;
+    min-height: 1000px;
+    margin: 0 auto;
+    
+    background: #FFFFFF;
+    
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 1260px;
+    min-height: 100px;
+
+    background: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    justify-content: space-between;
+}
+.header_content{
+    width: 100%;
+    display: flex;
+
+    max-width: 1160px;
+    min-height: 20px;
+    justify-content: space-between;
+    border-bottom: 2px solid #f9f9f9;
+
+    background: #ffffff;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.header_content_info{
+    max-width: 210px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 38px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.info1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    
+    color: #6A983C;
+}
+.info2{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    
+    color: #6A983C;
+}
+.header_content_nav{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 38px;
+}
+.header_main{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1160px;
+    min-height: 30px;
+
+}
+.header_main_text{
+    font-size: 48px;
+    font-weight: 700;
+}
+.line{
+    margin-top: 10px;
+    width: 1160px;
+    border: 1px solid #f9f9f9;
+}
+.h1c{
+    color: #6A983C;
+}
+.fortable{
+    width: 600px;
+    align-items: center;
+    border: solid 1px black;
+
+}
+
+form, .forform{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input[type=text]{
+    min-height: 50px;
+    border: 1px solid #6A983C;
+    border-radius: 12px;
+}
+
+.table{
+    width: 30vw;
+    max-width: 700px;
+    margin: 30px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    font-weight: 600;
+    background-color: aqua;
+}
+th, td, tr{
+    text-align: center;
+    width: 110px;
+    border: 1px solid black;
+}
+
+.answer{
+    margin: 50px;
+    padding: 10px;
+    max-width: 202px;
+    border: 2px solid black;
+    color: black;
+}
