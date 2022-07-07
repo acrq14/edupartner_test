@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+body {
+	background: #fff;
+	color: #313131;
+	min-height: 100vh;
+	font-family: 'Roboto', Helvetica;
+	font-size: 18px;
+}
+a {
+    color: #242e31;
+    text-decoration: none;
+    font-weight: 600;
+}
+header {
+	position: fixed;
+	width: 100%;
+    max-width: 1260px;
+	z-index: 20;
+	height:80px;
+	background: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+.content-wrapper{
+	width: 100%;
+}
+.header__nav {
+    position: absolute;
+    right: 36px;
+    display: block;
+}
+.header__menu {
+    display: flex;
+	position: relative;
+	z-index: 2;
+}
+.header__menu li {
+	list-style: none;
+	margin: 0px 0px 0px 36px;
+	color: #000;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.content-wrapper{
+    margin-top: 78px;
+    padding: 10px;
+    line-height: 34px;
+}
+@media(max-width: 767px){
+.header__nav {
+	display: block;
+	position: absolute;
+    top: 55px;
+    left: 0;
+    background: rgb(245, 246, 246);
+    box-shadow: #ccc;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
+    transition: all 0.4s ease;
+	left:-100%;
+}
+.header__menu {
+	display: block;
+}
+.header__nav.open-menu{
+    left:0;
+}
+.header__menu li {
+	margin: 40px 0px 40px 33px;
+    font-size: 14px;
+	}
+.menu-burger__header {
+	position: relative;
+    width: 40px;
+    height: 35px;
+    display: block;
+    margin-left: 10px;
+   }
+.menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	background: #515758;
+	margin: 0 auto;
+}
+.menu-burger__header span{
+	top: 16px;
+}
+.menu-burger__header:after, .menu-burger__header:before{
+	content: '';
+}
+.menu-burger__header:after{
+	bottom: 5px;
+}
+.menu-burger__header:before{
+	top: 5px;
+}
+.menu-burger__header.open-menu span {
+	opacity:0; 
+    transition: 0.5s; 
+}
+.menu-burger__header.open-menu:before {
+	transform: rotate(38deg);
+    top: 16px;
+    transition: 0.4s;
+}
+.menu-burger__header.open-menu:after {
+	transform: rotate(-38deg);
+    bottom: 16px;
+    transition: 0.4s;
+}
+
+header {
+	height: 60px;
+}
+.content-wrapper {
+    margin-top: 48px;
+}
+.fixed-pade {
+    overflow: hidden;
+}
+
+
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    max-width: 1260px;
+    min-height: 1000px;
+    margin: 0 auto;
+    
+    background: #FFFFFF;
+    
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+
+}
+
+
+.header_main{
+    padding: 100px 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1160px;
+    min-height: 30px;
+
+}
+
+.header_main_text{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.answer_text{
+    margin: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.line{
+    margin-top: 10px;
+    width: 1160px;
+    border: 1px solid #f9f9f9;
+}
+.h1c{
+    color: #6A983C;
+}
+.fortable{
+    width: 600px;
+    align-items: center;
+    border: solid 1px black;
+
+}
+
+form, .forform{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input[type=text]{
+    min-height: 50px;
+    border: 1px solid #6A983C;
+    border-radius: 12px;
+    max-width: 250px;
+}
+
+input[type=submit]{
+    background-color: #3366cc;
+    border-radius: 10px;
+    min-width: 200px;
+    padding: 10px 0px; 
+    border-radius: 10px;
+}
+
+.table{
+    width: 30vw;
+    max-width: 700px;
+    margin: 30px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    font-weight: 600;
+    background-color: aqua;
+}
+th, td, tr{
+    text-align: center;
+    width: 110px;
+    border: 1px solid black;
+}
+
+.answer{
+    margin: 10px;
+    padding: 10px;
+    max-width: 202px;
+    font-size: 30px;
+    border: 2px solid black;
+    color: black;
+}
+.circle{
+    text-decoration: none;
+    background: aqua;
+    height: 45px;
+    border: 1px solid #0F1C3F;
+    border-radius: 12px;
+}
+.forarticle_2{
+    padding: 80px 0 0 0;
+}
