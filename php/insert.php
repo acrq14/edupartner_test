@@ -48,13 +48,13 @@
         
         <?php
         include 'check.php';
-        include '../config/db.php';                                                  // Привязка db.php
-        if(isset($_POST['insert'])){                                       // Проверка отправки POST от insert
-            $word = $_POST['word'];                                        // Привязка input с изменем word к переменной word
-            $meaning = $_POST['meaning'];                                  // Привязка input с изменем word к переменной word
+        include '../config/db.php';                                                 
+        if(isset($_POST['insert'])){                                      
+            $word = $_POST['word'];                                        
+            $meaning = $_POST['meaning'];                                 
 
-            $sql="INSERT INTO words(eng,rus) values('$word','$meaning')";  // Вставка значение в бд
-            $query=mysqli_query($conn,$sql);                              // Запрос к базе данных
+            $sql="INSERT INTO words(eng,rus) values('$word','$meaning')";  
+            $query=mysqli_query($conn,$sql);                             
         }
         $sqltable="SELECT * from words";
         $querytable=mysqli_query($conn,$sqltable);
